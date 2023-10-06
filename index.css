@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: greenyellow;
+  /* overflow: scroll; */
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 80vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+}
+
+span {
+  position: relative;
+  font-size: 25px;
+  bottom: -1px;
+}
+
+.opt-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  /* gap: 10px; */
+}
+
+button {
+  color: white;
+  background-color: green;
+  border-radius: 3px;
+  padding: 2px;
+  border: 0;
+  /* border:none */
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  height: 40px;
+  width: 50px;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+.gridCol {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #ddd;
+  background-color: transparent;
+}
+
+.gridRow {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .gridCol {
+    height: 1rem;
+    width: 1rem;
+  }
+}
